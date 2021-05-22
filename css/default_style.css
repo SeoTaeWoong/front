@@ -1,19 +1,18 @@
-/*·¹ÀÌ¾Æ¿ô*/
+/*ï¿½ï¿½ï¿½Ì¾Æ¿ï¿½*/
 #header {
     background:url(../img/header_img.jpg) repeat-x center top;
 }
-#nav {
+#menu_nav {
     background-color:#f6fdff;
 }
 
-/*ÄÁÅ×ÀÌ³Ê*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½Ì³ï¿½*/
 .container {
     width: 1200px;
     margin:0 auto;
-    background: rgba(0,0,0,0.3)
 }
 
-/*Çì´õ*/
+/*ï¿½ï¿½ï¿½*/
 .header {
     height:327px;
 }
@@ -36,18 +35,18 @@
         text-transform: uppercase;
         margin-left:55px;
         margin-top:55px;
-        font-family: 'Haan YGodic 230',ÈÞ¸Õ°íµñ, scan-serif;
+        font-family: 'Haan YGodic 230',ï¿½Þ¸Õ°ï¿½ï¿½ï¿½, scan-serif;
 }
 
-/*ÀüÃ¼ ¸Þ´º*/
-#nav {
+/*ï¿½ï¿½Ã¼ ï¿½Þ´ï¿½*/
+#menu_nav {
     height:30px;
     padding: 10px 0;
     border-top:1px solid #ccc;
     border-bottom: 1px solid #ccc;
 }
 
-.nav > ol > li{
+.menu_nav > ol > li{
     float:left;
     text-align:center;
     position:relative;
@@ -57,7 +56,7 @@
     
 }
 
-.nav > ol> li ol{
+.menu_nav > ol> li ol{
     overflow:hidden;
     visibility:hidden;
     background:white;
@@ -78,54 +77,22 @@
 
 
 
-.nav> ol > li ol> li{
+.menu_nav> ol > li ol> li{
     white-space:nowrap;
 }
 
-.nav > ol > li > ol > li > a {
+.menu_nav > ol > li > ol > li > a {
     display:block;
     width:100%;
     height:100%;
 }
 
-.nav > ol > li > ol > li :hover {
+.menu_nav > ol > li > ol > li :hover {
     background:#eeeeee;
 }
 
-/*ÀÌº¥Æ® ¼½¼Ç(section)*/
-#event_section { margin: 39px 9px 39px 9px;}
 
-
-/*¸ÞÀÎ ¼½¼Ç*/
-#main_section { margin: 10px 0 10px 0; }
-
-.main_section {
-    overflow:hidden;
-}
-.main_section > .update_area {
-    width: 50%;
-    height: 200px;
-    float: left;
-}
-
-.main_section > .notice_area {
-    width: 50%;
-    height: 200px;
-    float: left;
-}
-
-.main_section > .navs {
-    width:100%;
-}
-
-.main_section > .navs > nav{
-    margin:0 2.5%;
-    width:20%;
-    height:200px;
-    float:left;
-}
-
-/*ÇªÅÍ*/
+/*Çªï¿½ï¿½*/
 footer {
     margin-top:70px;
     width:100%;
@@ -133,7 +100,7 @@ footer {
     background: #ccc;
 }
 
-/*¹Ìµð¾îÄõ¸®*/
+/*ï¿½Ìµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 @media (max-width:1220px) {
     .container {
         width:100%;
@@ -142,3 +109,4 @@ footer {
         padding: 0 5px;
     }
 }
+

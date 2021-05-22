@@ -65,14 +65,12 @@ window.onload = function () {
 
     //캐러셀 오브젝트 변경? 이동?
     var carousel_obj_move = function() {
-        console.log(index);
         for (i = 0; i < total-2; i++) {
             document.querySelector(".obj").children[i].innerHTML = "○";     
             if (i === index-1) {
                 document.querySelector(".obj").children[index-1].innerHTML = "●";
             }
         }
-        console.log(index );
         if (index === total-1) {
             document.querySelector(".obj").firstChild.innerHTML = "●";
         }else if(index === 0){
@@ -120,8 +118,6 @@ window.onload = function () {
         index--;
         slide.style.transition = "transform 300ms";
         slide.style.transform = "translateX(" + (-100 * index) + "%)";
-        console.log("확인용:" +index);
-        console.log("토탈:" + total);
         if (index === 0) {
             setTimeout(slide_reset, 300);
         }

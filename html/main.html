@@ -2,7 +2,8 @@
 <html lang="ko">
 <head>
     <link rel="stylesheet" href="../css/reset.css"/>
-    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/default_style.css"/>
+    <link rel="stylesheet" href="../css/main_page_style.css"/>
     <link rel="stylesheet" href="../css/carousel.css"/>
     <script src="../js/main_slide_menubar.js"></script>
     <script src="../js/carousel.js"></script>
@@ -33,10 +34,10 @@
     </header>
     <!--header-->
 
-    <nav id="nav">
+    <nav id="menu_nav">
         <div class="container">
             <div class="row">
-                <div class="nav">
+                <div class="menu_nav">
                     <ol>
                         <li onmouseover="showSemiMenu(this,0)" onmouseout="hideSemiMenu(this,0)">
                             <h3>디지몬RPG</h3>
@@ -50,8 +51,8 @@
                         <li onmouseover="showSemiMenu(this,1)" onmouseout="hideSemiMenu(this,1)">
                             <h3>가이드</h3>
                             <ol>
-                                <li><a href="#">초보자가이드</a></li>
-                                <li><a href="#">게임용어</a></li>
+                                <li><a href="#">초보자 가이드</a></li>
+                                <li><a href="#">게임 용어</a></li>
                                 <li><a href="#">단축키</a></li>
                             </ol>
                         </li>
@@ -70,6 +71,21 @@
             </div>
         </div>
     </nav>
+
+    <nav id="tip_nav">
+        <div class="container">
+            <div class="tip_nav">
+                <ul>
+                    <li>초보자 가이드</li>
+                    <li>용어 정리</li>
+                    <li>아이템 정보</li>
+                    <li>디지몬 정보</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
     <section id="event_section">
         <div class="container">
             <div class="event_section">
@@ -89,14 +105,77 @@
     <section id="main_section">
         <div class="container">
             <div class="main_section">
-                <article class="update_area"><h3>업데이트</h3></article>
-                <article class="notice_area"><h3>공지사항</h3></article>
-                <div class="navs">
-                    <nav>초보자 가이드</nav>
-                    <nav>용어 정리</nav>
-                    <nav>아이템 정보</nav>
-                    <nav>디지몬 정보</nav>
-                </div>
+                <article class="update_area">
+                    <table>
+                        <caption>
+                            <span><h2>디지몬 RPG 업데이트</h2></span>
+                            <span><a>더보기</a></span>
+                        </caption>
+                        <tbody>
+                            <tr>
+                                <td>번호</td>
+                                <td>제목</td>
+                                <td>작성일</td>
+                            </tr>
+                            <tr>
+                                <td>번호</td>
+                                <td>제목</td>
+                                <td>작성일</td>
+                            </tr>
+                            <tr>
+                                <td>번호</td>
+                                <td>제목</td>
+                                <td>작성일</td>
+                            </tr>
+                            <tr>
+                                <td>번호</td>
+                                <td>제목</td>
+                                <td>작성일</td>
+                            </tr>
+                            <tr>
+                                <td>번호</td>
+                                <td>제목</td>
+                                <td>작성일</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+                <article class="notice_area">
+                    <table>
+                        <caption>
+                            <span><h2>디지몬 RPG 공지사항</h2></span>
+                            <span><a>더보기</a></span>
+                        </caption>
+                        <tbody>
+                            <tr>
+                                <td>번호</td>
+                                <td>제목</td>
+                                <td>작성일</td>
+                            </tr>
+                            <tr>
+                                <td>번호</td>
+                                <td>제목</td>
+                                <td>작성일</td>
+                            </tr>
+                            <tr>
+                                <td>번호</td>
+                                <td>제목</td>
+                                <td>작성일</td>
+                            </tr>
+                            <tr>
+                                <td>번호</td>
+                                <td>제목</td>
+                                <td>작성일</td>
+                            </tr>
+                            <tr>
+                                <td>번호</td>
+                                <td>제목</td>
+                                <td>작성일</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+                
                 
             </div>
         </div>
@@ -106,3 +185,8 @@
     </footer>
 </body>
 </html>
+
+
+
+
+

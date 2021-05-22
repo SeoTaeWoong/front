@@ -3,7 +3,7 @@ width: 100%;
 position: relative;
 height: 228px;
 margin: 0 auto;
-border: solid 0px black;
+border: solid 1px rgb(151, 151, 151);
 overflow: hidden;
 }
 
