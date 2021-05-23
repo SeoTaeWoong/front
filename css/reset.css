@@ -1,24 +1,24 @@
-/*¿©¹é ÃÊ±âÈ­*/
+/*ï¿½ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½È­*/
 body, div, ul, li, dl, dd, body, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr,
 textarea, button, form, figure, figcaption { margin:0; padding:0; }
 
-/*a ¸µÅ© ÃÊ±âÈ­*/
+/*a ï¿½ï¿½Å© ï¿½Ê±ï¿½È­*/
 a { color: #222; text-decoration: none; }
 a:hover { color: #2698cb; }
 
-/* ÆùÆ® ÃÊ±âÈ­*/
+/* ï¿½ï¿½Æ® ï¿½Ê±ï¿½È­*/
 body, input, textarea, select, button, table {
-    font-family: HYGothic, 'Malgun Gothic', '¸¼Àº°íµñ', Dotum, 'µ¸¿ò', sans-serif: color: #222;
+    font-family: HYGothic, 'Malgun Gothic', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', Dotum, 'ï¿½ï¿½ï¿½ï¿½', sans-serif: color: #222;
     font-size: 13px;
     line-height:1.5;
 }
 
-/*ÆùÆ® ½ºÅ¸ÀÏ ÃÊ±âÈ­*/
+/*ï¿½ï¿½Æ® ï¿½ï¿½Å¸ï¿½ï¿½ ï¿½Ê±ï¿½È­*/
 em, address {
     font-style: normal;
 }
 
-/*ºí¸´±âÈ£ ÃÊ±âÈ­*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È£ ï¿½Ê±ï¿½È­*/
 ul, li, ol {
     list-style:none;
 }

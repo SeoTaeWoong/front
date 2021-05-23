@@ -104,8 +104,12 @@ window.onload = function () {
 
     //캐러셀 next버튼 클릭 이벤트 - 화면이동
     target_nextBtn.addEventListener("click", function () {
-        index++;
+        if(index < total-1){
+            index++;
+        }
+        console.log(index);
         slide.style.transition = "transform 300ms";
+        slide.style.transition = "transform 300ms";;
         slide.style.transform = "translateX(" + (-100 * index) + "%)";
         if (index === total - 1) {
             setTimeout(slide_reset, 300);
@@ -115,8 +119,10 @@ window.onload = function () {
 
     //캐러셀 prev버튼 클릭 이벤트 - 화면이동
     target_prevBtn.addEventListener("click", function () {
-        index--;
-        slide.style.transition = "transform 300ms";
+        if(index > 0){
+            index--;
+        }
+        slide.style.transition = "transform 300ms";;
         slide.style.transform = "translateX(" + (-100 * index) + "%)";
         if (index === 0) {
             setTimeout(slide_reset, 300);
