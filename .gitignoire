@@ -1,0 +1,7 @@
+# Created by https://gitignore.io/api/java,eclipse,gradle
+
+###Eclipse ###
+
+
+## NESOY Ignore File ##
+.vs/

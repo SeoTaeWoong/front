@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
-    <link rel="stylesheet" href="../css/reset.css"/>
-    <link rel="stylesheet" href="../css/default_style.css"/>
-    <link rel="stylesheet" href="../css/update_forums.css"/>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/default_style.css" />
+    <link rel="stylesheet" href="../css/notice_forums.css" />
     <script src="../js/main_slide_menubar.js"></script>
     <meta charset="utf-8">
     <title>디지몬RPG INFO</title>
@@ -26,9 +26,9 @@
                         </a>
                     </div>
                 </div>
-             </div>
+            </div>
         </div>
-        
+
     </header>
     <!--header-->
 
@@ -38,11 +38,12 @@
                 <div class="menu_nav">
                     <ol>
                         <li onmouseover="showSemiMenu(this,0)" onmouseout="hideSemiMenu(this,0)">
-                            <h3>새 소식</h3>
+                            <h3>디지몬RPG</h3>
                             <ol>
                                 <li><a href="#">업데이트</a></li>
                                 <li><a href="#">공지사항</a></li>
-                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">진행 이벤트</a></li>
+                                <li><a href="#">종료 이벤트</a></li>
                             </ol>
                         </li>
                         <li onmouseover="showSemiMenu(this,1)" onmouseout="hideSemiMenu(this,1)">
@@ -69,20 +70,24 @@
         </div>
     </nav>
 
-    <main id="update_forums">
+    <main id="notice_forums">
         <div class="container">
             <div class="main_contents">
                 <div class="current_menu">
                     <ul>
-                        <li><h2>전체</h2></li>
-                        <li><h2>업데이트</h2></li>
-                        <li><h2>공지사항</h2></li>
-                        <li><h2>이벤트</h2></li>
+                        <li>
+                            <h2>디지몬Rpg</h2>
+                            <ul>
+                                <li>
+                                    <h3>공지사항</h3>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
-                <div class="update_forums">
+                <div class="notice_forums">
                     <table>
-                        <caption><h2>업데이트 목록</h2></caption>
+                        <caption><h2>공지사항 목록</h2></caption>
                         <thead>
                             <tr>
                                 <th>글 번호</th>
@@ -124,17 +129,11 @@
                         <a>3</a>
                         <a>4</a>
                     </div>
-                    <div class="search">
-                        <select>
-                            <option>제목+내용</option>
-                            <option>제목</option>
-                            <option>내용</option>
-                        </select>
-                        <input type="search" value=""/>
-                        <input type="button" />
-                    </div>
                 </div>
             </div>
+            <article class="sub_contents">
+                <div></div>
+            </article>
         </div>
     </main>
 

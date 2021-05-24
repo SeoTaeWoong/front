@@ -8,7 +8,7 @@ a:hover { color: #2698cb; }
 
 /* ��Ʈ �ʱ�ȭ*/
 body, input, textarea, select, button, table {
-    font-family: HYGothic, 'Malgun Gothic', '��������', Dotum, '����', sans-serif: color: #222;
+    font-family: HYGothic, 'Malgun Gothic', 휴먼고딕, Dotum, '태 나무', sans-serif; color: #222;
     font-size: 13px;
     line-height:1.5;
 }

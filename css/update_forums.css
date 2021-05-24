@@ -1,16 +1,32 @@
 #update_forums{
     margin-top : 40px;
 }
+.current_menu {
+    margin-top:15px;
+    margin-bottom:30px;
+}
 
-.main_contents  {
-    width:800px;
-    height:600px;
+.current_menu > ul {
+    display: flex;
+}
+
+.current_menu > ul >li{
+    text-align: center;
+    width:25%;
+    border:1px solid #ccc;
+    border-bottom-color: #000;
+    border-bottom-width:2px;
+    line-height:45px;
+}
+
+.current_menu > ul > li > h2 {
+    font-size: 20px;
+    font-weight:bold;
 }
 
 .update_forums > table {
     width:100%;
-    height:80%;
-}
+}   
 
 .update_forums > table > caption{
     text-align: left;   
@@ -49,4 +65,9 @@
 
 .update_forums > table > tbody > tr:nth-of-type(2n){
     background-color: rgba(192, 192, 192, 0.5);
+}
+
+.update_forums > .paging {
+    margin-top:50px;
+    text-align: center;
 }
