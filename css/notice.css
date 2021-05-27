@@ -1,8 +1,8 @@
-#main_contents{
+#notice_main_contents{
     margin-top : 40px;
 }
 
-#main_contents > .container > .title > h2 {
+#notice_main_contents > .container > .title > h2 {
     font-size: 45px;
     font-weight: bold;
     padding-left:15px;
