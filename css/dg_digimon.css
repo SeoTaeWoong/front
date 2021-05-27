@@ -1,0 +1,7 @@
+.digimon_wrap > .menu_group_wrap > .menu_group > ul > li {
+    display: flex;
+}
+
+.digimon_wrap > .menu_group_wrap > .menu_group > ul > li >ul {
+    display:inline-flex;
+}
