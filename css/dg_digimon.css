@@ -1,11 +1,11 @@
 .digimon_wrap {
     margin-top:45px;
+    width:75%;
 }
 
 .digimon_wrap > .menu_group_wrap {
-    width: 80%;
+    width: 100%;
     height: auto;
-    border: 1px solid violet;
     margin: 0 auto;
 }
 
@@ -49,6 +49,8 @@
     right:15px;
 }
 
+
+/*검색옵션 선택 탭*/
 .digimon_wrap > .menu_group_wrap > .advanced_menu_group{
     visibility: hidden;
     width:100%;
@@ -156,10 +158,63 @@
     margin-top:30px;
     width:100%;
     height:auto;
+    border-top:1px solid black;
 }
 
 .digimon_list_wrap > ul{
     width: 100%;
-    height:500px;
+    height:330px;
+}
 
+.digimon_list_wrap > ul > li:first-of-type{
+    background-color: rgba(206, 206, 206, 0.4);
+}
+
+.digimon_list_wrap > ul > li{
+    width:100%;
+    height:5%;
+    padding:5px 0;
+    border-bottom:1px solid #ccc;
+}
+
+.digimon_list_wrap > ul > li > ul{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.digimon_list_wrap > ul > li:first-of-type > ul > li{
+    width:25%;
+    height: 100%;
+    text-align: center;
+    font-size:16px;
+    font-weight: bold;
+}
+
+.digimon_list_wrap > ul > li:not(:first-of-type) > ul > li{
+    width:25%;
+    height: 100%;
+    text-align: center;
+    font-size:14px;
+}
+
+.paging_wrap{
+    width:100%;
+    height:auto; 
+    margin-top:40px;
+}
+
+.paging_wrap > ul{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paging_wrap > ul > li {
+    width:16px;
+    height: 16px;
+}
+
+.paging_wrap > ul > li > a{
+    font-size:14px;
 }

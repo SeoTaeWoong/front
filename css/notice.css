@@ -22,6 +22,7 @@
     line-height:100%;
     font-size:16px;
     padding:1%;
+    vertical-align: bottom;
 }
 .search_wrap > .search_board {
     width:69%;

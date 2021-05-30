@@ -38,15 +38,15 @@
                 <div class="menu_nav">
                     <ol>
                         <li onmouseover="showSemiMenu(this,0)" onmouseout="hideSemiMenu(this,0)">
-                            <h3>월드 소식</h3>
+                            <a href="../html/notice.html?boardType=1"><h3>월드 소식</h3></a>
                             <ol>
-                                <li><a href="#">업데이트</a></li>
-                                <li><a href="#">공지사항</a></li>
-                                <li><a href="#">이벤트</a></li>
+                                <li><a href="../html/notice.html?boardType=2">업데이트</a></li>
+                                <li><a href="../html/notice.html?boardType=3">공지사항</a></li>
+                                <li><a href="../html/notice.html?boardType=4">이벤트</a></li>
                             </ol>
                         </li>
                         <li onmouseover="showSemiMenu(this,1)" onmouseout="hideSemiMenu(this,1)">
-                            <h3>가이드</h3>
+                            <a><h3>가이드</h3></a>
                             <ol>
                                 <li><a href="#">초보자 가이드</a></li>
                                 <li><a href="#">게임 용어</a></li>
@@ -54,10 +54,10 @@
                             </ol>
                         </li>
                         <li onmouseover="showSemiMenu(this,2)" onmouseout="hideSemiMenu(this,2)">
-                            <h3>정보</h3>
+                            <a href="../html/dg_character.html"><h3>게임 정보</h3></a>
                             <ol>
-                                <li><a href="#">캐릭터 소개</a></li>
-                                <li><a href="#">디지몬 정보</a></li>
+                                <li><a href="../html/dg_character.html">캐릭터 소개</a></li>
+                                <li><a href="../html/dg_digimon.html">디지몬 정보</a></li>
                                 <li><a href="#">아이템 정보</a></li>
                                 <li><a href="#">아바타 정보</a></li>
                                 <li><a href="#">지도/지역</a></li>
@@ -67,6 +67,7 @@
                 </div>
             </div>
         </div>
+    </nav>
     </nav>
 
     <main>
@@ -85,7 +86,7 @@
                                 <ul class="level_check_wrap">
                                     <li>
                                         <label for="level_check_all">
-                                            <input type="checkbox" id="level_check_all">
+                                            <input type="checkbox" id="level_check_all" checked>
                                             <span>전체</span>
                                         </label>
                                     </li>
@@ -130,7 +131,7 @@
                                 <ul class="evo_grade_check_wrap">
                                     <li>
                                         <label for="evo_grade_check_all">
-                                            <input type="checkbox" id="evo_grade_check_all">
+                                            <input type="checkbox" id="evo_grade_check_all" checked>
                                             <span>전체</span>
                                         </label>
                                     </li>
@@ -177,7 +178,7 @@
                                 <ul class="rank_check_wrap">
                                     <li>
                                         <label for="rank_check_all">
-                                            <input type="checkbox" id="rank_check_all">
+                                            <input type="checkbox" id="rank_check_all" checked>
                                             <span>전체</span>
                                         </label>
                                     </li>
@@ -224,7 +225,7 @@
                                 <ul class="region_check_wrap">
                                     <li>
                                         <label for="region_check_all">
-                                            <input type="checkbox" id="region_check_all">
+                                            <input type="checkbox" id="region_check_all" checked>
                                             <span>전체</span>
                                         </label>
                                     </li>
@@ -281,6 +282,46 @@
                                </li>
                            </ul>
                         </li>
+                        <li>
+                            <ul>
+                                <li>
+                                    베르제브몬
+                                </li>
+                                <li>
+                                    97
+                                </li>
+                                <li>
+                                    Legend
+                                </li>
+                                <li>
+                                    하늘던전 2층 (11,87)
+                                </li>
+                            </ul>
+                         </li>
+                         <li>
+                            <ul>
+                                <li>
+                                    알파몬
+                                </li>
+                                <li>
+                                    100
+                                </li>
+                                <li>
+                                    Legend
+                                </li>
+                                <li>
+                                    하늘던전 2층 (57,64)
+                                </li>
+                            </ul>
+                         </li>
+                    </ul>
+                </div>
+                <div class="paging_wrap">
+                    <ul>
+                        <li><a>1</a></li>
+                        <li><a>2</a></li>
+                        <li><a>3</a></li>
+                        <li><a>4</a></li>
                     </ul>
                 </div>
             </div>
