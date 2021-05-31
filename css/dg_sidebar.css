@@ -1,0 +1,12 @@
+.dg_container{
+    position:relative;
+}
+
+aside{
+    width:20%;
+    height: 100%;
+    position:absolute;
+    top:0%;
+    right: 0%;
+    background-color: #eee;
+}

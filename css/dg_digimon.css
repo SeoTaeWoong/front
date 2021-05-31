@@ -1,6 +1,11 @@
+main{
+    width:75%;
+    height: auto;
+}
+
 .digimon_wrap {
     margin-top:45px;
-    width:75%;
+    width:100%;
 }
 
 .digimon_wrap > .menu_group_wrap {

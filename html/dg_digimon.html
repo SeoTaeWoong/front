@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/default_style.css">
     <link rel="stylesheet" href="../css/dg_digimon.css" />
+    <link rel="stylesheet" href="../css/dg_sidebar.css" />
     <script src="../js/main_slide_menubar.js"></script>
     <script src="../js/dg_digimon.js"></script>
     <title>디지몬 RPG INFO</title>
@@ -15,13 +16,13 @@
             <div class="header">
                 <div class="row">
                     <div class="header_menu">
-                        <a href="#">디지몬RPG</a>
+                        <a href="../html/main.html">디지몬RPG</a>
                         <a href="#">공식카페</a>
                         <a href="#">관리자 문의</a>
                         <a href="#">로그인</a>
                     </div>
                     <div class="header_title">
-                        <a href="#">
+                        <a href="../html/main.html">
                             <h1>디지몬 RPG INFO</h1>
                         </a>
                     </div>
@@ -32,7 +33,7 @@
     </header>
     <!--header-->
 
-    <nav id="menu_nav">
+    <nav id="menu_nav"> 
         <div class="container">
             <div class="row">
                 <div class="menu_nav">
@@ -68,10 +69,9 @@
             </div>
         </div>
     </nav>
-    </nav>
 
-    <main>
-        <div class="container">
+    <div class="container dg_container">
+        <main>
             <div class="digimon_wrap">
                 <div class="menu_group_wrap">
                     <div class="search_board_wrap">
@@ -267,20 +267,20 @@
                 <div class="digimon_list_wrap">
                     <ul>
                         <li>
-                           <ul>
-                               <li>
-                                   이름
-                               </li>
-                               <li>
-                                   레벨
-                               </li>
-                               <li>
-                                   등급
-                               </li>
-                               <li>
-                                   출현지역
-                               </li>
-                           </ul>
+                        <ul>
+                            <li>
+                                이름
+                            </li>
+                            <li>
+                                레벨
+                            </li>
+                            <li>
+                                등급
+                            </li>
+                            <li>
+                                출현지역
+                            </li>
+                        </ul>
                         </li>
                         <li>
                             <ul>
@@ -297,8 +297,8 @@
                                     하늘던전 2층 (11,87)
                                 </li>
                             </ul>
-                         </li>
-                         <li>
+                        </li>
+                        <li>
                             <ul>
                                 <li>
                                     알파몬
@@ -313,7 +313,7 @@
                                     하늘던전 2층 (57,64)
                                 </li>
                             </ul>
-                         </li>
+                        </li>
                     </ul>
                 </div>
                 <div class="paging_wrap">
@@ -325,11 +325,27 @@
                     </ul>
                 </div>
             </div>
-        </div>
-    </main>
-
+        </main>
+        <aside>
+            <div>
+                진행중인 이벤트
+            </div>
+            <div>
+                위잿 금일 마왕군 장소 시간 / 해저길
+            </div>
+            <nav>
+                공식홈페이지 바로가기
+                공식카페 바로가기
+            </nav>
+            <address>
+                관리자 문의
+                메일
+            </address>
+        </aside>
+    </div>
     <footer>
         <h5>addr</h5>
     </footer>
+
 </body>
 </html>
