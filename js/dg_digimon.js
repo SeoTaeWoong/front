@@ -7,6 +7,6 @@ window.onload = function() {
     }
 
     console.log(advanced_menu_slide);
-    advanced_menu_slide.addEventListener("click", advanced_menu_toggle);
+    //advanced_menu_slide.addEventListener("click", advanced_menu_toggle);
 
 }

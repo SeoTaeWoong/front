@@ -27,13 +27,13 @@
                         </a>
                     </div>
                 </div>
-             </div>
+            </div>
         </div>
-        
+
     </header>
     <!--header-->
 
-    <nav id="menu_nav"> 
+    <nav id="menu_nav">
         <div class="container">
             <div class="row">
                 <div class="menu_nav">
@@ -57,10 +57,9 @@
                         <li onmouseover="showSemiMenu(this,2)" onmouseout="hideSemiMenu(this,2)">
                             <a href="../html/dg_character.html"><h3>게임 정보</h3></a>
                             <ol>
-                                <li><a href="../html/dg_character.html">캐릭터 소개</a></li>
-                                <li><a href="../html/dg_digimon.html">디지몬 정보</a></li>
-                                <li><a href="#">아이템 정보</a></li>
-                                <li><a href="#">아바타 정보</a></li>
+                                <li><a href="../html/dg_character.html">테이머</a></li>
+                                <li><a href="../html/dg_digimon.html">디지몬</a></li>
+                                <li><a href="../html/dg_items.html">카드/아이템</a></li>
                                 <li><a href="#">지도/지역</a></li>
                             </ol>
                         </li>
@@ -72,14 +71,16 @@
 
     <div class="container dg_container">
         <main>
-            <div class="digimon_wrap">
+            <div class="items_wrap">
                 <div class="menu_group_wrap">
-                    <div class="search_board_wrap">
-                        <input type="search" class="search_board" placeholder="디지몬 이름을 입력해주세요.">
-                        <button class="search_button"></button>
-                        <button class="advanced_menu_button"></button>
-                    </div>
-                    <div class="advanced_menu_group">
+                    <div class="menu_group">
+                        <div class="tabs_wrap">
+                            <ul class="tab">
+                                <li>디지몬</li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <button class="reset_button"></button>
                         <ul>
                             <li>
                                 <h5>레벨</h5>
@@ -256,31 +257,31 @@
                                 </ul>
                             </li>
                         </ul>
-                        <div class="check_search_button_wrap">
-                            <button class="check_search_button">검색</button>
-                            <button class="check_reset_button">초기화</button>
+                        <div class="white_space"></div>
+                        <div class="search_board_wrap">
+                            <input type="search" class="search_board" placeholder="검색할 정보를 입력해주세요.">
+                            <button class="search_button">검색</button>
                         </div>
                     </div>
-                    
                 </div>
-                
+
                 <div class="digimon_list_wrap">
                     <ul>
                         <li>
-                        <ul>
-                            <li>
-                                이름
-                            </li>
-                            <li>
-                                레벨
-                            </li>
-                            <li>
-                                등급
-                            </li>
-                            <li>
-                                출현지역
-                            </li>
-                        </ul>
+                            <ul>
+                                <li>
+                                    이름
+                                </li>
+                                <li>
+                                    종류
+                                </li>
+                                <li>
+                                    옵션
+                                </li>
+                                <li>
+                                    제한사항
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <ul>

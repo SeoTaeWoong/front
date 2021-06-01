@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../css/dg_items.css" />
     <link rel="stylesheet" href="../css/dg_sidebar.css" />
     <script src="../js/main_slide_menubar.js"></script>
-    <script src="../js/dg_digimon.js"></script>
+    <script src="../js/dg_items.js"></script>
     <title>디지몬 RPG INFO</title>
     <meta charset="utf-8">
 </head>
@@ -83,187 +83,25 @@
                         </div>
                         <button class="reset_button"></button>
                         <ul>
-                            <li>
-                                <h5>레벨</h5>
-                                <ul class="level_check_wrap">
-                                    <li>
-                                        <label for="level_check_all">
-                                            <input type="checkbox" id="level_check_all" checked>
-                                            <span>전체</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label for="check_1~70">
-                                            <input type="checkbox" id="check_1~70">
-                                            <span>공격 카드</span>
-                                        </label>
-                                    </li>
-                                    <li>
-
-                                        <label for="check_71~99">
-                                            <input type="checkbox" id="check_71~99">
-                                            <span>방어 카드</span>
-                                        </label>
-                                    </li>
-                                    <li>
-
-                                        <label for="check_100~130">
-                                            <input type="checkbox" id="check_100~130">
-                                            <span>소모품</span>
-                                        </label>
-                                    </li>
-                                    <li>
-
-                                        <label for="check_131~180">
-                                            <input type="checkbox" id="check_131~180">
-                                            <span>장비</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label for="check_direct_input">
-                                            <input type="checkbox" id="check_direct_input">
-                                            <span>직접 입력</span>
-                                            <input type="text" disabled> ~ <input type="text" disabled>
-                                        </label>
-                                    </li>
-                                </ul>
+                            <li id="column1" class="column">
+                                
                             </li>
-                            <li>
-                                <h5>진화 단계</h5>
-                                <ul class="evo_grade_check_wrap">
-                                    <li>
-                                        <label for="evo_grade_check_all">
-                                            <input type="checkbox" id="evo_grade_check_all" checked>
-                                            <span>전체</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label for="check_ausbildungs_level">
-                                            <input type="checkbox" id="check_ausbildungs_level">
-                                            <span>유년기</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label for="check_rookie_level">
-                                            <input type="checkbox" id="check_rookie_level">
-                                            <span>성장기</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label for="check_champion_level">
-                                            <input type="checkbox" id="check_champion_level">
-                                            <span>성숙기</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label for="check_ultimate_level">
-                                            <input type="checkbox" id="check_ultimate_level">
-                                            <span>완전체</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label for="check_mega_level">
-                                            <input type="checkbox" id="check_mega_level">
-                                            <span>궁극체</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label for="check_super_ultimate">
-                                            <input type="checkbox" id="check_super_ultimate">
-                                            <span>초궁극체</span>
-                                        </label>
-                                    </li>
-                                </ul>
+                            <li id="column2" class="column">
+                                
                             </li>
-                            <li>
-                                <h5>등급</h5>
-                                <ul class="rank_check_wrap">
-                                    <li>
-                                        <label for="rank_check_all">
-                                            <input type="checkbox" id="rank_check_all" checked>
-                                            <span>전체</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label for="check_beginner">
-                                            <input type="checkbox" id="check_beginner">
-                                            <span>비기너</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label for="check_veteranr">
-                                            <input type="checkbox" id="check_veteran">
-                                            <span>베테랑</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label for="check_elite">
-                                            <input type="checkbox" id="check_elite">
-                                            <span>엘리트</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label for="check_legend">
-                                            <input type="checkbox" id="check_legend">
-                                            <span>레전드</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label for="check_silver_crown">
-                                            <input type="checkbox" id="check_silver_crown">
-                                            <span>은관(히어로)</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label for="check_golden_crown">
-                                            <input type="checkbox" id="check_golden_crown">
-                                            <span>금관(보스)</span>
-                                        </label>
-                                    </li>
-                                </ul>
+                            <li id="column3" class="column">
+                                
                             </li>
-                            <li>
-                                <h5>출현 지역</h5>
-                                <ul class="region_check_wrap">
-                                    <li>
-                                        <label for="region_check_all">
-                                            <input type="checkbox" id="region_check_all" checked>
-                                            <span>전체</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label for="check_real_wold">
-                                            <input type="checkbox" id="check_real_wold">
-                                            <span>리얼 월드</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label for="check_digital_wold">
-                                            <input type="checkbox" id="check_digital_wold">
-                                            <span>디지털 월드</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label for="check_solo_dungeon">
-                                            <input type="checkbox" id="check_solo_dungeon">
-                                            <span>1인 던전</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label for="check_event/raid">
-                                            <input type="checkbox" id="check_event/raid">
-                                            <span>이벤트/레이드</span>
-                                        </label>
-                                    </li>
-                                </ul>
+                            <li id="column4" class="column">
+                                
                             </li>
                         </ul>
+                        <div class="white_space"></div>
                         <div class="search_board_wrap">
-                            <input type="search" class="search_board" placeholder="디지몬 이름을 입력해주세요.">
-                            <button class="search_button"></button>
+                            <input type="search" class="search_board" placeholder="검색할 정보를 입력해주세요.">
+                            <button class="search_button">검색</button>
                         </div>
                     </div>
-
                 </div>
 
                 <div class="digimon_list_wrap">
@@ -274,13 +112,13 @@
                                     이름
                                 </li>
                                 <li>
-                                    레벨
+                                    종류
                                 </li>
                                 <li>
-                                    등급
+                                    옵션
                                 </li>
                                 <li>
-                                    출현지역
+                                    제한사항
                                 </li>
                             </ul>
                         </li>
