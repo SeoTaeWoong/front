@@ -2,11 +2,44 @@
     position:relative;
 }
 
-aside{
-    width:20%;
+.sidebar_wrap {
+    display:flex;
+    flex-direction:column;
+    width: 20%;
     height: 100%;
-    position:absolute;
-    top:0%;
+    position: absolute;
+    top: 0%;
     right: 0%;
     background-color: #eee;
+}
+
+.sidebar_wrap > .events_wrap{
+    width:90%;
+    height:300px;
+    margin:0 auto;
+    background-color: #b23939;
+}
+
+.sidebar_wrap > .game_infomation_wrap{
+    width:90%;
+    height:200px;
+    margin:0 auto;
+    margin-top:30px;
+    background:#b6ff00;
+}
+
+.sidebar_wrap > .sites_wrap{
+    width:90%;
+    height:120px;
+    margin: 0 auto;
+    margin-top:20px;
+    background:#ffffff
+}
+
+.sidebar_wrap > .admin_info{
+    width: 90%;
+    height:170px;
+    margin: 0 auto;
+    margin-top:20px;
+    background: #ffd800;
 }
