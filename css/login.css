@@ -1,0 +1,122 @@
+/*웹 타이틀 css*/
+
+#web_title_wrap {
+    margin-top: 60px;
+}
+.web_title_wrap {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom:30px;
+    border-bottom: 1px solid black;
+}
+
+.web_title_wrap > h2{
+    font-size:60px;
+    font-weight:bolder;
+    letter-spacing:3px;
+}
+
+/*로그인 폼 css*/
+#login_container {
+    margin-top:30px;
+}
+
+.login_wrap {
+    width:800px;
+    margin: 0 auto;
+    height:400px;
+    background: #d0d1d8;
+    border-radius:45px;
+}
+
+.login_wrap > h3{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.login_wrap > ul {
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    flex-direction:column;
+    text-align:center;
+    width:400px;
+    height:100%;
+}
+
+.login_wrap > ul  > li {
+    width:80%;
+    height:60px;
+    margin: 0 auto;
+}
+
+.login_wrap > ul  > .login_title{
+    height:auto;
+    margin: 0 auto;
+    padding:15px;
+}
+
+.login_wrap > ul  > .login_title > h3{
+    font-size:30px;
+    font-weight:bold;
+    letter-spacing:3px;
+}
+
+.login_wrap > ul  > .id_title, .login_wrap > ul > .pw_title{
+    width:80%;
+    height:auto;
+    margin: 0 auto;
+}
+
+.login_wrap > ul > li > h5{
+    font-size:16px;
+    font-weight:bold;
+    float:left;
+    letter-spacing:1px;
+}
+
+.login_wrap > ul > li > input{
+    border-radius: 20px;
+    padding:10px;
+    outline:none;
+    border:none;
+    width:-webkit-calc(100% - 20px);
+    width: calc(100% - 20px);
+    font-size:16px;
+}
+
+.login_wrap > ul > .help_wrap > label {
+    float:left;
+    user-select:none;
+    
+}
+
+.login_wrap > ul > .help_wrap > label > string {
+    padding-left:2px;
+    vertical-align:text-bottom;   
+}
+
+.login_wrap > ul > .help_wrap > a {
+    float: right;
+    user-select:none;
+    cursor:pointer;
+}
+
+.login_wrap > ul > .login_btn_wrap {
+
+}
+
+.login_wrap > ul > .login_btn_wrap > button {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color:white;
+    background: #6facff;
+    box-shadow: 2px 3px 4px rgba(15,22,2,0.2);
+    letter-spacing:2px;
+    cursor:pointer;
+}
