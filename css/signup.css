@@ -1,0 +1,70 @@
+/*웹 타이틀 css*/
+
+#web_title_wrap {
+    margin-top: 60px;
+}
+.web_title_wrap {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom:30px;
+    border-bottom: 1px solid black;
+}
+
+.web_title_wrap > h2{
+    font-size:60px;
+    font-weight:bolder;
+    letter-spacing:3px;
+}
+
+/*sub_title css*/
+#sub_title {
+    width:300px;
+    height:50px;
+    margin:0 auto;
+    margin-top:30px;
+    text-align:center;
+}
+
+#sub_title > h2{
+    font-size:32px;
+    font-weight:bold;
+}
+
+/*회원가입 css*/
+#signup_container {
+    margin-top : 30px;
+}
+.privacy_policy_wrap {
+    width:100%;
+    height:auto;
+    border:1px solid black;
+    padding:30px 0;
+}
+
+.privacy_policy_wrap > h4{
+    font-size:24px;
+    font-weight:bold;
+}
+
+.privacy_policy_wrap > .privacy_policy {
+    width:100%;
+    margin:10px 0 10px 0;
+    height:300px;
+    overflow-y:scroll;
+    border: 1px solid black;
+}
+
+.privacy_policy_wrap > .button-wrap {
+    margin: 0 auto;
+    width:80px;
+    height:40px;
+}
+
+
+.privacy_policy_wrap > .button-wrap >  .next-step{
+    width:60px;
+    height:30px;
+    
+}
