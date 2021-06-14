@@ -3,37 +3,37 @@ main{
     height: auto;
 }
 
-.items_wrap {
+.digimons_wrap {
     margin-top:45px;
     width:100%;
 }
 
-.items_wrap > .menu_group_wrap {
+.digimons_wrap > .menu_group_wrap {
     width: 100%;
     height: auto;
     margin: 0 auto;
 }
 
-.items_wrap > .menu_group_wrap > .menu_group{
+.digimons_wrap > .menu_group_wrap > .menu_group{
     position:relative;
 }
 
 
 /*카드 및 아이템 탭*/
-.items_wrap > .menu_group_wrap > .menu_group > .tabs_wrap{
+.digimons_wrap > .menu_group_wrap > .menu_group > .tabs_wrap{
     width:100%;
     height:50px;
     
 }
 
-.items_wrap > .menu_group_wrap > .menu_group > .tabs_wrap > .tab{
+.digimons_wrap > .menu_group_wrap > .menu_group > .tabs_wrap > .tab{
     display:flex;
     width:100%;
     height:100%;
     align-items:flex-end;
 }
 
-.items_wrap > .menu_group_wrap > .menu_group > .tabs_wrap > .tab > li:not(:last-of-type) {
+.digimons_wrap > .menu_group_wrap > .menu_group > .tabs_wrap > .tab > li:not(:last-of-type) {
     border-top-left-radius:5px;
     border-top-right-radius:5px;
     border-width: 2px 2px 0px;
@@ -42,28 +42,30 @@ main{
     font-weight:bold;
 }
 
-.items_wrap > .menu_group_wrap > .menu_group > .tabs_wrap > .tab > li:not(:last-of-type) {
-    width:100px;
+.digimons_wrap > .menu_group_wrap > .menu_group > .tabs_wrap > .tab > li:not(:last-of-type) {
+    width:180px;
     height:70%;
     padding:5px;
-    font-size:24px;
+    font-size:20px;
     align-items:flex-end;
     text-align:center;
     cursor:pointer;
 }
 
-.items_wrap > .menu_group_wrap > .menu_group > .tabs_wrap > .tab > li:last-of-type {
-    width: 88%;
+.digimons_wrap > .menu_group_wrap > .menu_group > .tabs_wrap > .tab > li:last-of-type {
+    width: 90%;
     height: 70%;
 }
-.items_wrap > .menu_group_wrap > .menu_group > .tabs_wrap > .tab > li:last-of-type {
+.digimons_wrap > .menu_group_wrap > .menu_group > .tabs_wrap > .tab > .tab_not_select {
     border:0 !important;
     border-bottom: 2px solid #ccc !important;
+    height:50% !important;
+    font-size:16px !important;
 }
 
 /*검색옵션 리셋 버튼*/
 
-.items_wrap > .menu_group_wrap > .menu_group > .reset_button {
+.digimons_wrap > .menu_group_wrap > .menu_group > .reset_button {
     width: 40px;
     height: 40px;
     position:absolute;
@@ -73,92 +75,139 @@ main{
 
 
 /*검색옵션 선택 탭*/
-.items_wrap > .menu_group_wrap > .menu_group{
+.digimons_wrap > .menu_group_wrap > .menu_group{
     width:100%;
-    height:400px;
+    height:auto;
     transition: all 0.2s;
     overflow: hidden;
 }
 
 /*검색 옵션*/
-.items_wrap > .menu_group_wrap > .menu_group > ul {
+.digimons_wrap > .menu_group_wrap > .menu_group > ul {
     width:-webkit-calc(100%-2px);
     width:calc(100%-2px);
-    height:73%;
+    height:auto;
     border-width: 0 2px 0px 2px;
     border-style:solid;
     border-color:#ccc;
-    padding-top:10px;
 }
 
-.items_wrap > .menu_group_wrap > .menu_group > ul > li {
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li {
     width:100%;
-    height: -webkit-calc(25% - 1px);
-    height:calc(25% - 1px);
+    height: auto;
     display: flex;
     border-bottom:1px solid #ccc;
 }
 
-.items_wrap > .menu_group_wrap > .menu_group > ul > li:last-of-type{
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li:last-of-type{
     border-bottom:none;
 }
 
-.items_wrap > .menu_group_wrap > .menu_group > ul > li > h5 {
-    width:12%;
-    font-size:18px;
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > h5 {
+    width:15%;
+    font-size:16px;
+    font-weight:600;
     align-items: center;
     display: flex;
     padding-left:15px;
     background: rgba(226, 226, 226,0.3);
 }
 
-.items_wrap > .menu_group_wrap > .menu_group > ul > li > ul {
+
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > ul {
+    padding-top:3px;
     width:100%;
     height: 100%;
     display:inline-flex;
+    flex-wrap:wrap;
     align-items: center;
 }
 
-.items_wrap > .menu_group_wrap > .menu_group > ul > li > ul > li {
-    width: 13%;
-    text-align: center;
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > ul > li {
+    width: 16.53%;
     border-right: 1px solid #ccc;
 }
 
-.items_wrap > .menu_group_wrap > .menu_group > ul > li:first-of-type > ul > li:last-of-type{
-    width:25%;
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > ul > li > label {
+    display:block;
+    margin:0 auto;
+    width:70px;
 }
 
-.items_wrap > .menu_group_wrap > .menu_group > ul > li > ul > li:last-of-type  {
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > ul > hr {
+    width: 100%;
+    margin:3px 0;
+    border:none;
+}
+
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > ul > li:last-of-type, .digimons_wrap > .menu_group_wrap > .menu_group > ul > li > ul > li:nth-of-type(6n) {
     border-right: none;
 }
 
-.items_wrap > .menu_group_wrap > .menu_group > ul > li > ul > li > label {
-    -ms-user-select: none;
-    -moz-user-select: none;
-    -ms-touch-select: none;
-    -webkit-user-select: none;
-    user-select: none;
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > ul > li >  span:hover {
+    color: rgba(30, 73, 94, 0.90);
+    cursor:pointer;
+    font-weight:bold;
 }
 
-.items_wrap > .menu_group_wrap > .menu_group > ul > li > ul > li > label > span {
-    vertical-align: text-bottom;
+/* 검색옵션 특성부분 css덮어쓰기*/
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .char {
+    width:100%;
+    height:auto;
+    display:block;
+    padding:0px;
 }
 
-.items_wrap > .menu_group_wrap > .menu_group > ul > li > ul > li > label > input[type="text"] {
-    width:30px;
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .char > li {
+    width:101%;
+    display:flex;
+}
+
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .char > hr {
+    width:100%;
+    height:0.7px;
+    background: #ccc;
+    margin:0;
+}
+
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .char > li > h6 {
+    background-color:#ffbfbf;
+    width:16.53%;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content:center;
+    align-items:center;
+    display: flex;
+}
+
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .char > li > ul{
+    display:flex;
+    width:83.37%;
+        flex-wrap:wrap;
+
+}
+
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .char > li > ul > hr{
+    width:100%;
+    border:none;
+    margin:3px 0;
+}
+
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .char > li > ul > li{
+    width:19.65%;
+    border-right:1px solid #ccc;
 }
 
 /*검색창*/
 
-.items_wrap > .menu_group_wrap > .menu_group > .white_space{
+.digimons_wrap > .menu_group_wrap > .menu_group > .white_space{
     width:49%;
     height:50px;
     float:left;
     border-top:2px solid #ccc;
 }
 
-.items_wrap > .menu_group_wrap > .menu_group > .search_board_wrap {
+.digimons_wrap > .menu_group_wrap > .menu_group > .search_board_wrap {
     width:50%;
     height: 40px;
     padding:3px 0 3px;
@@ -176,12 +225,20 @@ main{
 }
 
 
-
-.items_wrap > .menu_group_wrap > .menu_group > .search_board_wrap > .search_board{
-    width: 99%;
+.digimons_wrap > .menu_group_wrap > .menu_group > .search_board_wrap > .search_options{
+    width:20%;
     height: 40px;
     padding:5px;
-    padding-right:5%;
+    vertical-align: text-bottom;
+    font-size:16px;
+}
+
+.digimons_wrap > .menu_group_wrap > .menu_group > .search_board_wrap > .search_board{
+    width: 78%;
+    height: 40px;
+    padding:5px;
+    padding-left:10px;
+    padding-right:14%;
     margin: 0 auto;
     font-size:16px;
     vertical-align: text-bottom;
@@ -189,7 +246,7 @@ main{
     border-width: thin;
 }
 
-.items_wrap > .menu_group_wrap > .menu_group > .search_board_wrap > .search_button{
+.digimons_wrap > .menu_group_wrap > .menu_group > .search_board_wrap > .search_button{
     width:60px;
     height: 40px;
     vertical-align: text-bottom;
@@ -200,7 +257,7 @@ main{
     outline: 0;
 }
 
-.items_wrap > .menu_group_wrap > .menu_group > .search_board_wrap > .search_button:hover{
+.digimons_wrap > .menu_group_wrap > .menu_group > .search_board_wrap > .search_button:hover{
     background-color:rgba(153, 153, 153, 0.8);
     outline: 0;
 }
