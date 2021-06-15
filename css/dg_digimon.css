@@ -103,18 +103,22 @@ main{
     border-bottom:none;
 }
 
-.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > h5 {
-    width:15%;
-    font-size:16px;
-    font-weight:600;
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .filter_title  {
     align-items: center;
     display: flex;
-    padding-left:15px;
     background: rgba(226, 226, 226,0.3);
 }
 
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .filter_title  > h5{
+    width:115px;
+    padding-left:15px;
+    font-size:16px;
+    font-weight:600;
+}
 
-.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > ul {
+
+/*파트너 필터 (자바스크립트 부분 css)*/
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .partner_filter {
     padding-top:3px;
     width:100%;
     height: 100%;
@@ -123,43 +127,62 @@ main{
     align-items: center;
 }
 
-.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > ul > li {
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .partner_filter > li {
     width: 16.53%;
     border-right: 1px solid #ccc;
+    text-align:center;
 }
 
-.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > ul > li > label {
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .partner_filter > li > label {
     display:block;
     margin:0 auto;
     width:70px;
 }
 
-.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > ul > hr {
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .partner_filter > hr {
     width: 100%;
     margin:3px 0;
     border:none;
 }
 
-.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > ul > li:last-of-type, .digimons_wrap > .menu_group_wrap > .menu_group > ul > li > ul > li:nth-of-type(6n) {
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .partner_filter > li:nth-of-type(6n) {
     border-right: none;
 }
 
-.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > ul > li >  span:hover {
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .partner_filter > li >  span:hover {
     color: rgba(30, 73, 94, 0.90);
     cursor:pointer;
     font-weight:bold;
 }
 
-/* 검색옵션 특성부분 css덮어쓰기*/
-.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .char {
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .partner_filter > li > label > p {
+    width:52px;
+    text-align:justify;
+    text-align-last:justify;
+    display:inline-block;
+    height:16px;
+    overflow:hidden;
+    user-select:none;
+}
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .partner_filter > li > label > p:after {
+    content:"";
+    display:inline-block;
     width:100%;
-    height:auto;
-    display:block;
-    padding:0px;
+}
+
+/* 파트너 검색옵션 특성부분 css덮어쓰기*/
+#column4 > .char_filter_title > h5 {
+    width: 70px;
+}
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .char {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 0px;
 }
 
 .digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .char > li {
-    width:101%;
+    width:100%;
     display:flex;
 }
 
@@ -171,8 +194,8 @@ main{
 }
 
 .digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .char > li > h6 {
-    background-color:#ffbfbf;
-    width:16.53%;
+    background-color:#cee7ff82;
+    width:45px;
     font-size: 16px;
     font-weight: 600;
     justify-content:center;
@@ -181,10 +204,13 @@ main{
 }
 
 .digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .char > li > ul{
-    display:flex;
-    width:83.37%;
-        flex-wrap:wrap;
-
+    width:calc( 100% - 45px);
+    width:-moz-calc( 100% - 45px);
+    width:-webkit-calc( 100% - 45px);
+    height: 100%;
+    display:inline-flex;
+    flex-wrap:wrap;
+    align-items: center;
 }
 
 .digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .char > li > ul > hr{
@@ -194,9 +220,89 @@ main{
 }
 
 .digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .char > li > ul > li{
-    width:19.65%;
+    width:16.53%;
     border-right:1px solid #ccc;
+    text-align:center;
 }
+
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .char > li > ul > li:nth-of-type(6n) {
+    border-right: none;
+}
+
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .char > li > ul > li > label{
+    display:block;
+    width:70px;
+    margin:0 auto;
+}
+
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .char > li > ul > li > label > p {
+    width:52px;
+    text-align:justify;
+    text-align-last:justify;
+    display:inline-block;
+    height:16px;
+    overflow:hidden;
+    user-select:none;
+}
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .char > li > ul > li > label > p:after {
+    content:"";
+    display:inline-block;
+    width:100%;
+}
+
+
+/* 적군 필터 (자바스크립트 부분css)*/
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > enemy_filter {
+    padding-top: 3px;
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+}
+
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .enemy_filter > li {
+    width: 100 %;
+    border-right: 1px solid #ccc;
+    text-align:center;
+}
+
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .enemy_filter > li > label {
+    display:block;
+    margin:0 auto;
+}
+
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .enemy_filter > hr {
+    width: 100%;
+    margin:3px 0;
+    border:none;
+}
+
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .enemy_filter > li:nth-of-type(6n) {
+    border-right: none;
+}
+
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .enemy_filter > li >  span:hover {
+    color: rgba(30, 73, 94, 0.90);
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .enemy_filter > li > label > p {
+    width:52px;
+    text-align:justify;
+    text-align-last:justify;
+    display:inline-block;
+    height:16px;
+    overflow:hidden;
+    user-select:none;
+}
+.digimons_wrap > .menu_group_wrap > .menu_group > ul > li > .enemy_filter > li > label > p:after {
+    content:"";
+    display:inline-block;
+    width:100%;
+}
+
+
 
 /*검색창*/
 
@@ -234,7 +340,7 @@ main{
 }
 
 .digimons_wrap > .menu_group_wrap > .menu_group > .search_board_wrap > .search_board{
-    width: 78%;
+    width: 98.5%;
     height: 40px;
     padding:5px;
     padding-left:10px;
@@ -258,17 +364,48 @@ main{
 }
 
 .digimons_wrap > .menu_group_wrap > .menu_group > .search_board_wrap > .search_button:hover{
-    background-color:rgba(153, 153, 153, 0.8);
+    background-color:rgba(153, 153, 153, 0.5);
     outline: 0;
+    cursor: pointer;
 }
 
 
-/* 디지몬 리스트 */
-.digimon_list_wrap{
-    margin-top:30px;
+/*파트너 디지몬 리스트*/
+.partner_digimon_list_wrap > .partner_info {
+    margin: 10px;
+    padding-top:5px;
+    display:inline-block;
+    width:15%;
+    height:140px;
+}
+
+.partner_digimon_list_wrap > .partner_info:hover {
+    cursor:pointer;
+    background:#ccc;
+}
+
+.partner_digimon_list_wrap > .partner_info > img{
+    margin:0 auto;
+    display:block;
+}
+
+.partner_digimon_list_wrap > .partner_info > strong{
     width:100%;
-    height:auto;
-    border-top:1px solid black;
+    text-align:center;
+    display:block;
+}
+
+.partner_digimon_list_wrap > .partner_info > i{
+    width:100%;
+    text-align:center;
+    display:block;
+}
+/* 적군 디지몬 리스트 */
+    .digimon_list_wrap {
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid black;
 }
 
 .digimon_list_wrap > ul{
