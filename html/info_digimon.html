@@ -3,10 +3,10 @@
 <head>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/default_style.css">
-    <link rel="stylesheet" href="../css/dg_maps.css" />
-    <link rel="stylesheet" href="../css/dg_sidebar.css" />
+    <link rel="stylesheet" href="../css/info_digimon.css" />
+    <link rel="stylesheet" href="../css/info_sidebar.css" />
     <script src="../js/main_slide_menubar.js"></script>
-    <script src="../js/dg_maps.js"></script>
+    <script src="../js/info_digimon.js"></script>
     <title>디지몬 RPG INFO</title>
     <meta charset="utf-8">
 </head>
@@ -55,12 +55,12 @@
                             </ol>
                         </li>
                         <li onmouseover="showSemiMenu(this,2)" onmouseout="hideSemiMenu(this,2)">
-                            <a href="../html/dg_character.html"><h3>게임 정보</h3></a>
+                            <a href="../html/info_tamer.html"><h3>게임 정보</h3></a>
                             <ol>
-                                <li><a href="../html/dg_character.html">테이머</a></li>
-                                <li><a href="../html/dg_digimon.html">디지몬</a></li>
-                                <li><a href="../html/dg_items.html">카드/아이템</a></li>
-                                <li><a href="../html/dg_maps.html">지도/지역</a></li>
+                                <li><a href="../html/info_tamer.html">테이머</a></li>
+                                <li><a href="../html/info_digimon.html">디지몬</a></li>
+                                <li><a href="../html/info_items.html">카드/아이템</a></li>
+                                <li><a href="../html/info_maps.html">지도/지역</a></li>
                             </ol>
                         </li>
                     </ol>
@@ -69,45 +69,114 @@
         </div>
     </nav>
 
-    <div class="container dg_container">
+    <div class="container info_container">
         <main>
-            <div class="items_wrap">
+            <div class="digimons_wrap">
                 <div class="menu_group_wrap">
                     <div class="menu_group">
                         <div class="tabs_wrap">
                             <ul class="tab">
-                                <li>필드/던전</li>
+                                <li>디지몬(아군)</li>
+                                <li>디지몬(적군)</li>
                                 <li></li>
                             </ul>
                         </div>
-                        <ul>
-                            <li id="column1" class="column">
-
-                            </li>
-                            <li id="column2" class="column">
-
-                            </li>
-                            <li id="column3" class="column">
-
-                            </li>
-                            <li id="column4" class="column">
-
-                            </li>
+                        <button class="reset_button"></button>
+                        <ul class="columns_wrap">
                         </ul>
                         <div class="white_space"></div>
                         <div class="search_board_wrap">
-                            <select class="search_options">
-                                <option>전체</option>
-                                <option>이름</option>
-                                <option>레벨</option>
-                            </select>
-                            <input type="search" class="search_board" placeholder="검색할 정보를 입력해주세요.">
+                            <input type="search" class="search_board" placeholder="디지몬 이름 입력">
                             <button class="search_button">검색</button>
                         </div>
                     </div>
                 </div>
 
-                <div class="digimon_list_wrap">
+                <div class="partner_digimon_list_wrap">
+                        <figure id="1" class="partner_info">
+                            <img class="partner_img" src="../img/digimonImg/alphamon.gif"><!-- 초상화 이미지-->
+                            <div class="partner_grade">
+                                초궁극체
+                            </div>
+                            <strong class="patner_name">베르제브몬</strong>
+                            <i class="partner_stet">
+                                <font color="red">2</font>
+                                /
+                                <font color="blue">2</font>
+                                /
+                                <font color="green">2</font>
+                                /
+                                <font color="orenge">2</font>
+                            </i>
+                        </figure>
+                        <figure class="partner_info">
+                            <img class="partner_img" src="../img/digimonImg/alphamon.gif"/><!-- 초상화 이미지-->
+                            <strong class="patner_name">베르제브몬</strong>
+                            <i class="partner_stet">
+                                <font color="red">2</font>
+                                /
+                                <font color="blue">2</font>
+                                /
+                                <font color="green">2</font>
+                                /
+                                <font color="orenge">2</font>
+                            </i>
+                        </figure>
+                        <figure class="partner_info">
+                            <img class="partner_img" src="../img/digimonImg/alphamon.gif"/><!-- 초상화 이미지-->
+                            <strong class="patner_name">베르제브몬</strong>
+                            <i class="partner_stet">
+                                <font color="red">2</font>
+                                /
+                                <font color="blue">2</font>
+                                /
+                                <font color="green">2</font>
+                                /
+                                <font color="orenge">2</font>
+                            </i>
+                        </figure>
+                        <figure class="partner_info">
+                            <img class="partner_img" src="../img/digimonImg/alphamon.gif"/><!-- 초상화 이미지-->
+                            <strong class="patner_name">베르제브몬</strong>
+                            <i class="partner_stet">
+                                <font color="red">2</font>
+                                /
+                                <font color="blue">2</font>
+                                /
+                                <font color="green">2</font>
+                                /
+                                <font color="orenge">2</font>
+                            </i>
+                        </figure>
+                        <figure class="partner_info">
+                            <img class="partner_img" src="../img/digimonImg/alphamon.gif"/><!-- 초상화 이미지-->
+                            <strong class="patner_name">베르제브몬</strong>
+                            <i class="partner_stet">
+                                <font color="red">2</font>
+                                /
+                                <font color="blue">2</font>
+                                /
+                                <font color="green">2</font>
+                                /
+                                <font color="orenge">2</font>
+                            </i>
+                        </figure>
+                        <figure class="partner_info">
+                            <img class="partner_img" src="../img/digimonImg/alphamon.gif"/><!-- 초상화 이미지-->
+                            <strong class="patner_name">베르제브몬</strong>
+                            <i class="partner_stet">
+                                <font color="red">2</font>
+                                /
+                                <font color="blue">2</font>
+                                /
+                                <font color="green">2</font>
+                                /
+                                <font color="orenge">2</font>
+                            </i>
+                        </figure>
+                </div>
+
+                <div class="enemy_digimon_list_wrap">
                     <ul>
                         <li>
                             <ul>
