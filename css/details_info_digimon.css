@@ -1,0 +1,49 @@
+.details_info_container {
+    margin-top:40px;
+}
+/*디지몬 진화 루트 선택*/
+.digimon_evo_root_wrap {
+    width: calc(50% - 2px);
+    display: inline-block;
+    height: 300px;
+    border: 1px solid black;
+    float: left;
+}
+.digimon_evo_root_wrap > .digimon_evo_root {
+    width:100%;
+    height:100%;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+
+.digimon_evo_root_wrap > .digimon_evo_root > .column{
+    width:100%;
+    height:auto;
+    display:flex;
+    justify-content:space-between;
+    padding:10px 0;
+    margin:5px 0;
+}
+
+.digimon_evo_root_wrap > .digimon_evo_root > .column:hover{
+    background:#ccc;
+    cursor:pointer;
+}
+
+.digimon_evo_root_wrap > .digimon_evo_root > .column > figure{
+    width:19%;
+    height:80px;
+}
+
+.digimon_evo_root_wrap > .digimon_evo_root > .column > figure > img{
+    width:100%;
+    height:100%;
+    border:1px solid black;
+}
+
+.digimon_details_info {
+    width: calc(50% - 2px);
+    display: inline-block;
+    height: 300px;
+    border: 1px solid black;
+}
