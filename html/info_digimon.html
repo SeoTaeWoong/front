@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/default_style.css">
     <link rel="stylesheet" href="../css/info_digimon.css" />
+    <link rel="stylesheet" href="../css/details_info_digimon.css" />
     <link rel="stylesheet" href="../css/info_sidebar.css" />
     <script src="../js/main_slide_menubar.js"></script>
     <script src="../js/info_digimon.js"></script>
@@ -69,6 +70,8 @@
         </div>
     </nav>
 
+
+    
     <div class="container info_container">
         <main>
             <div class="digimons_wrap">
@@ -90,6 +93,155 @@
                             <button class="search_button">검색</button>
                         </div>
                     </div>
+                </div>
+
+                <div class="digimon_details_info"> 
+                    <figure>
+                        <img class="digimon_ingame_img"/>
+                        <div class="digimon_status_calc_wrap">
+                            <div class="status_desc">
+                                <font color="red">
+                                    <em>*</em>
+                                    <small>해당 정보는 130렙 기준임을 알립니다.</small>
+                                </font>
+                            </div>
+                            <div class="digimon_status_calc">
+                                <div> 
+                                    레벨
+                                    <input type="text" value="130" disabled/>
+                                </div>
+                                <div>
+                                    힘
+                                    <input type="text" value="35" disabled/>
+                                </div>
+                                <div>
+                                    민첩
+                                    <input type="text" value="35" disabled/>
+                                </div>   
+                                <div>
+                                    건강
+                                    <input type="text" value="35" disabled/>
+                                </div>
+                                <div>
+                                    지능
+                                    <input type="text" value="35" disabled/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="digimon_info_wrap">
+                            <div class="digimon_info_title">디지몬 정보</div>
+                            <ul>
+                                <li class="status">
+                                    <ul class="digimon_stat_wrap">
+                                        <div class="sub_title_stat">스텟</div>
+                                        <li class="stat_attr">
+                                            <div id="strTitle"> 힘 </div>
+                                            <div id="strStat"> 2</div>
+                                        </li>
+                                        <li class="stat_attr">
+                                            <div id="aglTitle">민첩</div>
+                                            <div id="strStat"> 2</div>
+                                        </li>
+                                        <li class="stat_attr">
+                                            <div id="defTitle">건강</div>
+                                            <div id="strStat"> 2</div>
+                                        </li>
+                                        <li class="stat_attr">
+                                            <div id="intTitle">지능</div>
+                                            <div id="strStat"> 2</div>
+                                        </li>
+                                    </ul>
+                                    <ul class="digimon_type_wrap">
+                                        <div class="sub_title_type">- 데이터 타입 -</div>
+                                        <li class="type_attr">
+                                            <div id="strTitle"> TYPE </div>
+                                            <div id="strStat"> 바이러스</div>
+                                        </li>
+                                        <li class="type_attr">
+                                            <div id="strTitle"> 강함 </div>
+                                            <div id="strStat"> 데이터</div>
+                                        </li>
+                                        <li class="type_attr">
+                                            <div id="strTitle"> 약함 </div>
+                                            <div id="strStat"> 백신,불명</div>
+                                        </li>
+                                        
+                                    </ul>
+                                    <ul class="digimon_element_wrap">
+                                        <div class="sub_title_element">- 원소 속성 -</div>
+                                        <li class="elemnet">
+                                            <div id="strTitle"> 바람 </div>
+                                            <div id="strStat"> 2</div>
+                                        </li>
+                                        <li class="elemnet">
+                                            <div id="aglTitle">불</div>
+                                            <div id="strStat"> 2</div>
+                                        </li>
+                                    </ul>
+
+                                    <ul class="digimon_char_wrap">
+                                        <div class="sub_title_char">특성</div>
+                                        <li class="char_attr">
+                                            <figure>
+                                                <div>이미지</div>
+                                                <div>이름</div>
+                                                <div>스킬설명</div>
+                                                <div>계수</div>
+                                            </figure>
+                                            <figure>
+                                                <img/>
+                                                <em>증폭</em>
+                                                <strong class="char_attr_desc">
+                                                    증폭에대한 설명
+                                                </strong>
+                                                <b>0.2</b>
+                                            </figure>
+                                            <figure>
+                                                <img/>
+                                                <em>증폭</em>
+                                                <strong class="char_attr_desc">
+                                                    증폭에대한 설명
+                                                </strong>
+                                                <b>0.2</b>
+                                            </figure>
+                                        </li>
+                                    </ul>
+
+                                    <ul class="digimon_char_wrap">
+                                        <div class="sub_title_char">전용특성</div>
+                                        <li class="char_attr">
+                                            <figure>
+                                                <div>이미지</div>
+                                                <div>이름</div>
+                                                <div>스킬설명</div>
+                                                <div>계수</div>
+                                            </figure>
+                                            <figure>
+                                                <img/>
+                                                <em>성순이지스</em>
+                                                <strong class="char_attr_desc">
+                                                    전특에대한 설명
+                                                </strong>
+                                                <b></b>
+                                            </figure>
+                                        </li>
+                                    </ul>
+
+                                    <ul class="digimon_skills_wrap">
+                                        <li class="skill_2_wrap">
+
+                                        </li>
+                                        <li class="skill_2_wrap">
+                                            
+                                        </li>
+                                        <li class="skill_2_wrap">
+                                            
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </figure>
                 </div>
 
                 <div class="partner_digimon_list_wrap">
